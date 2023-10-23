@@ -1,0 +1,147 @@
+/*navbar*/
+.navbar{
+	position: relative;
+	z-index: 1;
+}
+.navbar-brand{
+	font-family: Viga;
+	font-size: 32px;
+	color: green !important;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+.nav-link{
+	text-transform: lowercase;
+	margin-right: : 30px;
+	/*font-weight: 300;*/
+	/*font-size: 32px;*/
+}
+.jumbotron{
+	background-image: url(sekolah.jpg);
+	background-size: cover;
+	height: 540px;
+	text-align: center;
+	position: relative;
+}
+.jumbotron .display-4{
+	color:white;
+	margin-top: 40px;
+	font-weight: 300;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+.jumbotron .container{
+	z-index: 1;
+	position: relative;
+}
+.jumbotron::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 80%;
+	background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+	position: absolute;
+	bottom: 0;
+}
+.jumbotron .display-4 span{
+	/*color: green;*/
+	font-weight: 600;
+	font-size: 50px;
+
+}
+/*utility*/
+.tombol{
+	text-transform: uppercase;
+	border-radius: 40px;
+	width: 200px;
+	font-size: 25px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+.tombol1{
+	text-transform: uppercase;
+	border-radius: 40px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+.justify{
+	text-align: justify;
+}
+
+
+/*desktop version*/
+@media (min-width: 992px) {
+	.navbar-brand, nav-link{
+		color: green !important;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	}
+	.nav-link{
+		text-transform: uppercase;
+		margin-right: 30px;
+
+	}
+	.nav-link:hover{
+		border-bottom: 3px solid #0B63DC;
+	}
+	.jumbotron{
+		margin-top: -75px;
+	}
+	.jumbotron .display-4{
+		font-size: 50px;
+	}
+	.jumbotron .display-4 span{
+		font-size: 90px;
+	}
+}
+.section-footer{
+	background-color: #eaeaea;
+	border-radius: 100px 0 0 0;
+}
+.row-sub-footer{
+	padding: 5rem 0px;
+}
+.wrapper-col-1 h1{
+	font-weight: 700;
+	font-size: 	2rem;
+	margin-bottom: 	1rem;
+}
+.wrapper-col-1 p{
+	font-size: 	14px;
+	width: 90%;
+}
+.wrapper-icon img{
+	width: 	30px;
+	margin-right: 	1rem;
+	margin-bottom: 	1rem;
+}
+.wrapper-col-2{
+	display: flex;
+	flex-direction: column;	
+}
+.wrapper-col-2 h1{
+	font-size: 1,5rem;
+	margin-bottom: 	1rem;
+}
+.wrapper-col-2 a{
+	color: #000;
+	font-size: 16px;
+	text-decoration: none;
+	margin-bottom: 	0.5rem;
+}
+
+.wrapper-col-3{
+	display: flex;
+	flex-direction: column;	
+}
+.wrapper-col-3 h1{
+	font-size: 1,5rem;
+	margin-bottom: 	1rem;
+}
+.wrapper-col-3 a{
+	color: #000;
+	font-size: 16px;
+	text-decoration: none;
+	margin-bottom: 	0.5rem;
+}
+.wrapper-last-footer{
+	padding: 1rem 0;
+	border-top: 2px solid #bdbdbd;
+}
